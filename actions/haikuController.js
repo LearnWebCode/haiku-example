@@ -14,7 +14,7 @@ const cloudinaryConfig = cloudinary.config({
 })
 
 function isAlphanumericWithSpaces(text) {
-  const regex = /^[a-zA-Z0-9 ]*$/
+  const regex = /^[a-zA-Z0-9 .,]*$/
   return regex.test(text)
 }
 

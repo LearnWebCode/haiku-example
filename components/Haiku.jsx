@@ -25,38 +25,38 @@ export default function Haiku(props) {
         sizes="650px"
         width="650"
         height="300"
-        crop="pad"
         fillBackground
+        crop={{ type: "pad", source: true }}
         src={props.haiku.photo}
         alt={props.haiku.line1}
         overlays={[
           {
             position: {
-              x: 155,
-              y: 155,
-              angle: -20,
+              x: 34,
+              y: 154,
+              angle: -10,
               gravity: "north_west"
             },
             text: {
               color: "black",
               fontFamily: "Source Sans Pro",
-              fontSize: 200,
-              fontWeight: "black",
+              fontSize: 42,
+              fontWeight: "bold",
               text: text
             }
           },
           {
             position: {
-              x: 140,
-              y: 140,
-              angle: -20,
+              x: 30,
+              y: 150,
+              angle: -10,
               gravity: "north_west"
             },
             text: {
               color: "white",
               fontFamily: "Source Sans Pro",
-              fontSize: 200,
-              fontWeight: "black",
+              fontSize: 42,
+              fontWeight: "bold",
               text: text
             }
           }
